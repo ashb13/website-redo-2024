@@ -342,7 +342,7 @@ Inside pages
 }
 
 .light-bg {
-    background-color: var(--white);
+    background-color: #fff;
     padding: 4.5rem 0 2.0rem;
     margin: auto;
 }
