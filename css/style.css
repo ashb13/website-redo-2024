@@ -76,7 +76,8 @@ h4 {
 p {
     line-height: 1.5;
     color: var(--black);
-    max-width: 800px;
+    /* max-width: 800px; */
+    /* width: 100%; */
 }
 
 ul {
@@ -99,6 +100,7 @@ ul li {
 .flex-space-between {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .flex-align-center {
@@ -112,6 +114,10 @@ ul li {
 
 .dark-bg {
     padding: 2.5rem;
+}
+
+.dots {
+    width: 100%;
 }
 
 /* section {
@@ -148,16 +154,8 @@ nav a:visited {
     color: var(--lt-prpl);
 }
 
-.hero-img-container {
-    background-image: url("../images/art.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50vw;
-    max-width: 1200px;
-    /* background-color: red; */
-    height: 35vh;
-    max-height: 800px;
+.hero .col-2 {
+    max-width: 500px;
 }
 
 .card, .proj-card, .proj-detail-card {
@@ -197,30 +195,6 @@ nav a:visited {
 .home-project-img {
     width: 70%;
     height: 35rem;
-}
-
-.card-left .home-project-img {
-    border-radius: 1.5rem 0 0 1.5rem;
-}
-
-.card-left .card-info {
-    border-radius: 0 1.5rem 1.5rem 0;
-}
-
-.card-right .home-project-img {
-    border-radius: 0 1.5rem 1.5rem 0;
-}
-
-.card-right .card-info {
-    border-radius: 1.5rem 0 0 1.5rem;
-}
-
-.home-proj-1 {
-    background-image: url("../images/1x/proactive.jpg");
-}
-
-.home-proj-2 {
-    background-image: url("../images/1x/chubbys.jpg");
 }
 
 #work img {
@@ -324,7 +298,6 @@ Inside pages
 
 .full-width-img {
     width: 100%;
-    max-width: 2650px;
     height: 60vh;
     max-height: 900px;
     background-color: var(--md-prpl);
@@ -336,7 +309,8 @@ Inside pages
 .full-width-img img {
     margin: 0 auto;
     /* display: block; */
-    height: 80%;
+    width: 90%;
+    max-width: 1200px;
 }
 
 .col-1,.col-2 {
@@ -386,4 +360,45 @@ Media queries
 //////////////
 */
 
+@media only screen and (max-width: 1250px) {
+    .card {
+        flex-wrap: wrap;
+        min-width: 200px;
+    }
 
+    .card-info {
+        width: 70%;
+        min-width: 200px;
+        padding: 1rem 1rem;
+        /* background-color: antiquewhite; */
+    }
+  }
+
+  @media only screen and (max-width: 1190px) {
+    .hero .flex-space-between, .proj-card .flex-space-between  {
+        flex-direction: column;
+    }
+
+    .col-1, .col-2 {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    .card-info {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .full-width-img {
+        height: 30vh;
+    }
+
+    .proj-card h1 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+  }
