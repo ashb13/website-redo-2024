@@ -309,8 +309,8 @@ Inside pages
 .full-width-img img {
     margin: 0 auto;
     /* display: block; */
-    width: 90%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 850px;
 }
 
 .col-1,.col-2 {
