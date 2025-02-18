@@ -151,6 +151,11 @@ nav a {
     color: var(--white);
 }
 
+nav img {
+    width: 100%;
+    max-width: 200px;
+}
+
 /* nav a:visited {
     color: var(--lt-prpl);
 } */
