@@ -383,6 +383,7 @@ Inside pages
 .cs-img-width {
     max-width: 900px;
     display: block;
+    margin: auto;
 }
 
     /*
