@@ -373,11 +373,15 @@ Inside pages
 }
 
 .bottom-spacing {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
 }
 
 .section-spacing {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
+}
+
+.top-spacing {
+    margin-top: 2rem !important;
 }
 
 .cs-img-width {
