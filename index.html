@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="js/initialize-AOS.js">
+        <link rel="stylesheet" href="css/tab.css">
         <script src="https://kit.fontawesome.com/21cd99163b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,42 +42,41 @@
     
     <section class="container" id="work">
         <h2 class="bottom-spacing">some of my work</h2>
-        
-    <a href="med-app.html">
+      <!-- tab group start -->
+        <div class="tab-menu">
+            <button class="tab-button active" data-tab-target="tab1">UI/UX & Product Design</button>
+            <button class="tab-button" data-tab-target="tab2">Graphic Design & Marketing</button>
+        </div>
+
+<div class="tab-content">
+  <div id="tab1" class="tab-pane active">
+    <h4>ui/ux & product design projects</h4>
+    <!-- <p>Showing 4 items</p> -->
+    <div class="tab-items">
+        <a href="med-app.html">
             <div data-aos="fade-in" class="card">
-                
                     <img src="images/1x/med-thumb.png">
-                
                 <div class="card-info">
                     
                         <h4>mobile app design</h4>
                         <h3 class="bottom-spacing">A fun twist on pill reminders</h3>
-                        <!-- <p>An industrial contractor in North Florida that was in need of an updated website.</p> -->
             </div>
         </div>
     </a>
-
-        <a href="construction.html">
+    <a href="construction.html">
             <div data-aos="fade-in" class="card">
-                
                     <img src="images/1x/site-pro-group.png">
                 
                 <div class="card-info">
-                    
                         <h4>web app/ mobile app design</h4>
                         <h3 class="bottom-spacing">Making construction planning efficient</h3>
-                        <!-- <p>An industrial contractor in North Florida that was in need of an updated website.</p> -->
             </div>
         </div>
     </a>
-        
         <a href="jwilliams.html">
             <div data-aos="fade-in" class="card">
-                
                     <img src="images/1x/jwilliams-laptop.png">
-                
                 <div class="card-info">
-                    
                         <h4>redesign</h4>
                         <h3 class="bottom-spacing">J. Williams Industrial, LLC</h3>
                         <p>An industrial contractor in North Florida that was in need of an updated website.</p>
@@ -95,6 +95,52 @@
             </div>
         </div>
     </a>
+    </div>
+  </div>
+  <div id="tab2" class="tab-pane">
+    <h4>graphic design & marketing projects and campaigns</h4>
+    <!-- <p>Showing 3 items</p> -->
+    <h5>Avecina Medical</h5>
+    <div class="proj-gallery">
+        <a data-fslightbox href="images/gallery/avecina/av1.jpg">
+	        <img src="images/gallery/avecina/av1.jpg" alt="Image">
+        </a>   
+        <a data-fslightbox href="images/gallery/avecina/av2.jpg">
+	        <img src="images/gallery/avecina/av2.jpg" alt="Image">
+        </a> 
+        <a data-fslightbox href="images/gallery/avecina/av3.jpg">
+	        <img src="images/gallery/avecina/av3.jpg" alt="Image">
+        </a>
+        <a data-fslightbox href="images/gallery/avecina/av4.jpg">
+	        <img src="images/gallery/avecina/av4.jpg" alt="Image">
+        </a>
+        <a data-fslightbox href="images/gallery/avecina/av5.jpg">
+	        <img src="images/gallery/avecina/av5.jpg" alt="Image">
+        </a>
+        <a data-fslightbox href="images/gallery/avecina/av6.jpg">
+	        <img src="images/gallery/avecina/av6.jpg" alt="Image">
+        </a>
+        <a data-fslightbox href="images/gallery/avecina/av7.jpg">
+	        <img src="images/gallery/avecina/av7.jpg" alt="Image">
+        </a>
+        <a data-fslightbox href="images/gallery/avecina/av8.png">
+	        <img src="images/gallery/avecina/av8.png" alt="Image">
+        </a>
+    </div>
+    <h5>First Coast Foot and Ankle Clinic</h5>
+    <div class="proj-gallery">
+        <a data-fslightbox href="images/gallery/fcfa/fcfa1.jpg">
+	        <img src="images/gallery/fcfa/fcfa1.jpg" alt="Image">
+        </a> 
+        <a data-fslightbox href="images/gallery/fcfa/fcfa2.jpg">
+	        <img src="images/gallery/fcfa/fcfa2.jpg" alt="Image">
+        </a>
+        <a data-fslightbox href="images/gallery/fcfa/fcfa3.jpg">
+	        <img src="images/gallery/fcfa/fcfa3.jpg" alt="Image">
+        </a>
+  </div>
+</div>
+ <!-- tab group end -->
     </section>
     <img class="curves bottom-curve" src="images/SVG/curve-flip.svg" draggable="false">
     <footer class="dark-bg">
@@ -106,5 +152,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="js/tab.js"></script>
+    <script src="js/fslightbox.js"></script>
 </body>
 </html>
