@@ -14,6 +14,7 @@
 /* Style the tab buttons */
 .tab-button {
   background-color: #939DFC;
+  color: #262C5B;
   border: none;
   cursor: pointer;
   padding: 1rem 1.6rem;
